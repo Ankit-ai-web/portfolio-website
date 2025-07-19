@@ -3,17 +3,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="index.css"/>
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     
 </head>
 <body>
-    <button onclick="console.log('button was clicked')">
-        click me !
-    </button>
-    <button ondblclick="console.log('button was clicked twice')"> click me twice</button>
-    <div onmouseover="console.log('you are inside div')">this is box</div>
+    <header>
+        <nav>
+            <div class="left">Personal Portfolio</div>
+            <div class="right">
+                <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contacts">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="first">
+            <div class="leftSection">
+                Hi! my name is <span class="purple">Ankit</span>
+              <div>and I am </div><span id="typed-text"></span>
+            </div>
+            <div class="rightSection">
+                <img src="image1.webp" alt="">
+            </div>
+        </section>
 
+        <hr>
+        <section id="about" class="about-section">
+            <div class="container" data-aos="fade-up">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        
+            <div data-aos="flip-up" data-aos-delay="300" data-aos-duration="1000" >
+  
+                
+                <p>
+                    <li>Hi! I am Ankit , a passionate <span class="aqua"> AI/ML Enthusiast</span>
+                    and <span class="purple">Web Developer.</span></li>
+                </p>
+                <p>I love building clean, modern websites and exploring inteligent systems.</p>
+                <p>
+                    I'm currently studying <span class="purple">Computer Science</span> at Galgotias University and always eager to learn something new</p>
+                <p><span class="aqua">Logo design</span> is my creative playground during free hours.</p>
+            </div>
+                    </div>
+                    <div class="about-image">
+                        <img src="main.jpeg" alt="Ankit's photo">
+                    </div>
+
+                </div>
+            </div>
+            
+
+        </section>
+
+        <hr>
+        <!-- SERVICES SECTION -->
+<section id="services" class="services-section">
+  <div class="container">
+    <h2 data-aos="fade-up">My Services</h2>
+    <div class="services-grid">
+      
+      <div class="service-card" data-aos="zoom-in">
+        <i><img src="web devlopment.png" width="130"></i>
+        <h3>Web Development</h3>
+        <div class="text-align">Creating modern, responsive, and user-friendly websites using HTML, CSS, JavaScript, and more.</div>
+      </div>
+      
+      <div class="service-card" data-aos="zoom-in" data-aos-delay="100">
+        <i><img src="logo.png" width="120"></i>
+        <h3>Logo Design</h3>
+        <div class="text-align">Designing clean, minimal, and custom logos to represent personal brands or startups.</div>
+      </div>
+      
+      <div class="service-card" data-aos="zoom-in" data-aos-delay="200">
+        <i><img src="aiml.png" width="100" ></i>
+        <h3>AI/ML Projects</h3>
+        <div class="text-align">Building beginner-level machine learning models and exploring real-world AI applications.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<hr>
+<!-- project-1 -->
+<section id="projects" class="project-section">
+  <h2 data-aos="zoom-in"> My Projects</h2>
+  <div class="project-grid">
+    <div class="project-card" data-aos="flip-up">
+      <div class="project-info">
+        <h3>Web Development</h3>
+        <p>Here you can see my responsive projects using HTML, CSS, and JavaScript</p>
+        <a href="#" target="_blank" class="view-btn">View Live</a>
+      </div>
+    </div>
+
+<!-- project-2 -->
+    <div class="project-card" data-aos="flip-up" data-aos-delay="100">
+      <div class="project-info">
+        <h3>Logo Showcase</h3>
+        <p>A gallery of logos I've designed as a creative hobby.</p>
+        <a href="#" target="_blank" class="view-btn">View Gallery</a>
+      </div>
+    </div>
+
+    <!-- Add more by duplicating this block -->
+  </div>
+</section>
+
+<hr>
+<section id="contacts">
+  <h2 class="section-title" data-aos="fade-up">Contact Me</h2>
+
+  <div class="contact-container" data-aos="fade-up" data-aos-delay="100">
+
+  <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value="3c90dde2-3d2f-42b5-a86a-d779f6b02258" />
+  <input type="text"name="name" placeholder=" enter your name" required />
+  <input type="email" placeholder="enter email" name="email" required />
+  <textarea name="message" placeholder="add message" required></textarea>
+  <button type="submit">Send</button>
+  <p id="form-status"></p>
+</form>
+
+     <div class="contact-info">
+      <p><i class="fa-solid fa-envelope"></i> ankit@example.com</p>
+      <p><i class="fa-solid fa-phone"></i> +91-XXXXXXXXXX</p>
+      <p><i class="fa-solid fa-location-dot"></i> India</p>
+      
+      <div class="contact-icons">
+      <a href=""><i class="fab fa-instagram"></i></a>
+      <a href=""><i class="fab fa-linkedin"></i></a>
+      <a href=""><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
     
+  </div>
+</section>
+
+    </main>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<script>
+  var typed = new Typed("#typed-text", {
+    strings: [
+      'a Web Developer.','a CSE Student.','an AI & ML Enthusiast.','a Logo Designer.'],
+    typeSpeed: 30,
+    backSpeed: 30,
+    backDelay: 1000,
+    loop: true,
+    showCursor: true,
+    cursorChar: "|"
+  });
+</script>
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+<script>
+  const form = document.getElementById('contactForm');
+  const status = document.getElementById('form-status');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    const data = new FormData(form);
+    fetch(form.action, {
+      method: form.method,
+      body: data,
+      headers: {
+        'Accept': 'application/json'
+      }
+    }).then(response => {
+      status.innerHTML = "✅ Message sent successfully!";
+      form.reset();
+    }).catch(error => {
+      status.innerHTML = "❌ Oops! Something went wrong.";
+    });
+  });
+</script>
+
+
 </body>
-</html>
