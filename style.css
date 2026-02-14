@@ -285,3 +285,25 @@ form button:hover{
     color: red;
     transform: translateY(-5px);
 }
+/* Tablets and small screens */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;   /* stack items vertically */
+  }
+
+  .social-links a {
+    font-size: 24px;
+    margin: 8px;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 0 12px;
+  }
+}
